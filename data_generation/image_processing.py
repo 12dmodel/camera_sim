@@ -24,14 +24,16 @@ from .denoise_wavelet import denoise_wavelet as sk_denoise_wavelet
 
 try:
     from halide.gradient_apps.gapps import functions as halide_funcs
-except: pass
+    HAS_HALIDE = True
+except:
+    HAS_HALIDE = False
 
 
 DEBUG = False
 
 
 def _has_halide():
-    return "halide_funcs" in vars() and "halide_funcs" in globals()
+    return HAS_HALIDE
 
 
 # TODO: Check if I need to set required_grad properly on all constant tensors.

@@ -1,0 +1,8 @@
+[submodule "halide/gradient-halide"]
+	path = halide/gradient-halide
+	url = git@github.com:12dmodel/gradient-halide.git
+	branch = master
+[submodule "halide/gradient_apps"]
+	path = halide/gradient_apps
+	url = git@github.com:12dmodel/gradient_apps.git
+	branch = master

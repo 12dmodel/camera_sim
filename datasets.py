@@ -27,7 +27,7 @@ def _configspec_path():
                       os.path.abspath(inspect.getfile(inspect.currentframe()))
                     )
     return os.path.join(current_dir,
-                        'configs/data_configs/data_configspec.conf')
+                        'dataset_specs/data_configspec.conf')
 
 
 class OnTheFlyDataset(data.Dataset):

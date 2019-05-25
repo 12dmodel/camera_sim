@@ -17,6 +17,12 @@ Then build halide to enable halide modules. Read the notes in the following sect
 
 *Important:* This has only been tested with `PyTorch 0.4.1`. If you want to use Halide Modules, you must use this exact version of PyTorch. This is because other versions have different backend codes that breaks this particular version of Halide.
 
+If you are training with [N3Net](https://github.com/visinf/n3net) (which we provide author's implementation), you will also need to install `pyinn` as follows:
+
+```
+pip install git+https://github.com/szagoruyko/pyinn.git@master
+```
+
 ## Note on building Halide
 
 This repo submodules halide repos, so be sure to clone those.

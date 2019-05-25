@@ -9,13 +9,13 @@ To-Do's
 
 Recommended: create a virtual environment.
 
-'''
+```
 pip install -r requirements.txt
-'''
+```
 
 Then build halide to enable halide modules. Read the notes in the following section first.
 
-*Important* This has only been tested with `PyTorch 0.4.1`. If you want to use Halide Modules, you must use this exact version of PyTorch. This is because other versions have different backend codes that breaks this particular version of Halide.
+*Important:* This has only been tested with `PyTorch 0.4.1`. If you want to use Halide Modules, you must use this exact version of PyTorch. This is because other versions have different backend codes that breaks this particular version of Halide.
 
 ## Note on building Halide
 
@@ -23,7 +23,7 @@ This repo submodules halide repos, so be sure to clone those.
 
 Use `llvm-config-5.0` and `clang-5.0`. Set `LLVMCONFIG` and `CLANG` environment variables and just run `make -j8`. We have seen some problem using other versions despite official instruction to use version 6.0 or later.
 
-Make sure your CUDA is 8.0, and Pytorch 0.4.1. Other versions may not work.
+Make sure your CUDA is 8.0, and Pytorch 0.4.1. Other versions may not work. We have successfully compiled/run this code on both Ubuntu 14.04 and 16.04.
 
 Don't clone from Halide from `jrk` or `mgharbi`, they include some updates that make it works with other version of pytorch that is not tested here.
 

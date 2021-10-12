@@ -1,7 +1,7 @@
 cffi==1.12.3
 configobj==5.0.6
 jupyter==1.0.0
-opencv-python==3.4.3.18
+opencv-python==4.2.0.32
 pip-chill==0.1.8
 pyinn==0.0.1
 rawpy==0.13.0

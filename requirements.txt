@@ -7,7 +7,7 @@ pyinn==0.0.1
 rawpy==0.13.0
 scikit-image==0.14.1
 setproctitle==1.1.10
-tensorflow==1.4.1
+tensorflow==2.9.3
 tensorflow-tensorboard==0.4.0
 tqdm==4.26.0
 webencodings==0.5.1
